@@ -29,8 +29,8 @@
 #define IS_INTERNAL_PWM  false // используется ли внутренний ШИМ для генерации высокого напряжения
 
 #define INDICATOR_QTY 7	// количество индикаторов (Dots) (H)(H) (M)(M) (S)(S)
-#define BRIGHT 100	// яркость цифр дневная, %
-#define BRIGHT_NIGHT 100	// яркость ночная, % // 20
+#define BRIGHT 50	// яркость цифр дневная, %
+#define BRIGHT_NIGHT 25	// яркость ночная, % // 20
 #define NIGHT_START 20	// час перехода на ночную подсветку (BRIGHT_NIGHT)
 #define NIGHT_END 8	// час перехода на дневную подсветку (BRIGHT) // 7
 
