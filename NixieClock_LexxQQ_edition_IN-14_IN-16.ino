@@ -30,7 +30,7 @@
 
 #define INDICATOR_QTY 7	// количество индикаторов (Dots) (H)(H) (M)(M) (S)(S)
 #define BRIGHT 50	// яркость цифр дневная, %
-#define BRIGHT_NIGHT 25	// яркость ночная, % // 20
+#define BRIGHT_NIGHT 10	// яркость ночная, % // 20
 #define NIGHT_START 20	// час перехода на ночную подсветку (BRIGHT_NIGHT)
 #define NIGHT_END 8	// час перехода на дневную подсветку (BRIGHT) // 7
 
@@ -756,7 +756,7 @@ void setup() {
 	btnSet.setDebounce(90);
 	dht22Sensor.begin();
 	ds3231Rtc.begin();
-	if (ds3231Rtc.lostPower()) { // || true
+	if (ds3231Rtc.lostPower()) {
 		ds3231Rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // following line sets the RTC to the date & time this sketch was compiled
 	}
 	// ds3231Rtc.adjust(DateTime(F(__DATE__), F(__TIME__))); // following line sets the RTC to the date & time this sketch was compiled
